@@ -6,4 +6,4 @@
 4. Need to master CRUD ops in React/Redux (Real goal of this application, every app is simplified down to CRUD)
 5. Errors will likely occur, need to handle errors
 
-- [] Install React-Router library
+- [x] Install React-Router library
