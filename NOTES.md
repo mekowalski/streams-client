@@ -7,3 +7,4 @@
 5. Errors will likely occur, need to handle errors
 
 - [x] Install React-Router library
+  - Import properties of React-Router(dom) library: BrowserRouter, Route
