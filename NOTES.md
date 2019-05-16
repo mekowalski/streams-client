@@ -8,3 +8,7 @@
 
 - [x] Install React-Router library
   - Import properties of React-Router(dom) library: BrowserRouter, Route
+
+- Navigate with React Router
+  - one way frequently used for changing routes is to manually change the route in the address bar
+  - Need to easily navigate between different routes inside application
