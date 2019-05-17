@@ -13,4 +13,4 @@
   - one way frequently used for changing routes is to manually change the route in the address bar
   - Need to easily navigate between different routes inside application
   - DO NOT navigate with anchor `<a />` tags
-  - [] Import Link from `react-router-dom`
+  - [x] Import Link from `react-router-dom`
