@@ -16,6 +16,6 @@
   - [x] Import Link from `react-router-dom`
 
 - Temporarily use different React Router types
-  - [] BrowserRouter
-  - [] HashRouter
-  - [] MemoryRouter
+  - [x] BrowserRouter
+  - [x] HashRouter
+  - [x] MemoryRouter

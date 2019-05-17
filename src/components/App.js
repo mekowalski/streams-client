@@ -1,7 +1,6 @@
 import React from 'react';
-import { HashRouter, Route, Link } from 'react-router-dom';
-//currently using BrowserRouter
-//change to HashRouter
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+
 const PageOne = () => {
   return (
     <div>
@@ -25,12 +24,12 @@ const App = () => {
     <div>
       Welcome to the Streams App!
       <div>
-        <HashRouter>
+        <BrowserRouter>
           <div>
             <Route path='/' exact component={PageOne}/>
             <Route path='/pagetwo' component={PageTwo} />
           </div>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </div>
   )
