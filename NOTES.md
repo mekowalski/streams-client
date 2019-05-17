@@ -14,3 +14,8 @@
   - Need to easily navigate between different routes inside application
   - DO NOT navigate with anchor `<a />` tags
   - [x] Import Link from `react-router-dom`
+
+- Temporarily use different React Router types
+  - [] BrowserRouter
+  - [] HashRouter
+  - [] MemoryRouter
