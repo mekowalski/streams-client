@@ -29,6 +29,7 @@
 - Eventually hook them up to individual route calls
 
 - Also need to decide which path to use when using each different component (current idea)
+
 Path | Component
 --- | ---
 / | StreamList
