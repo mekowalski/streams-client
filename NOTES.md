@@ -21,6 +21,7 @@
   - [x] MemoryRouter
 
 - Scaffold multiple components and hook them up to React-Router instance
+- New DIR for all the Streams-related components to help separate
 - [] StreamList: index page and shows list of streams
 - [] StreamShow: show page that gives detail on specific stream
 - [] StreamCreate: when a user decides they want to create a new stream, a form will be present
