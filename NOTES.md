@@ -31,5 +31,5 @@
 - Also need to decide which path to use when using each different component (current idea)
 Path | Component
 --- | ---
-'/' | StreamList
-'/streams/new ' | StreamCreate
+/ | StreamList
+/streams/new | StreamCreate
