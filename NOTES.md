@@ -26,4 +26,10 @@
 - [] StreamCreate: when a user decides they want to create a new stream, a form will be present
 - [] StreamEdit: when a user wants to edit a specific stream, a different form will be present
 - [] StreamDelete: to delete a stream
-- Evenutally hook them up to individual route calls
+- Eventually hook them up to individual route calls
+
+- Also need to decide which path to use when using each different component (current idea)
+Path | Component
+--- | ---
+'/' | StreamList
+'/streams/new ' | StreamCreate
