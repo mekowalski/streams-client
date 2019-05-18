@@ -19,3 +19,8 @@
   - [x] BrowserRouter
   - [x] HashRouter
   - [x] MemoryRouter
+
+- Scaffold multiple components and hook them up to React-Router instance
+- [] StreamList: index page and shows list of streams
+- [] StreamShow: show page that gives detail on specific stream
+- [] CreateStream: when a user decides they want to create a new stream, a form will be present
