@@ -22,11 +22,11 @@
 
 - Scaffold multiple components and hook them up to React-Router instance
 - New DIR for all the Streams-related components to help separate
-- [] StreamList: index page and shows list of streams
-- [] StreamShow: show page that gives detail on specific stream
-- [] StreamCreate: when a user decides they want to create a new stream, a form will be present
-- [] StreamEdit: when a user wants to edit a specific stream, a different form will be present
-- [] StreamDelete: to delete a stream
+- [x] StreamList: index page and shows list of streams
+- [x] StreamShow: show page that gives detail on specific stream
+- [x] StreamCreate: when a user decides they want to create a new stream, a form will be present
+- [x] StreamEdit: when a user wants to edit a specific stream, a different form will be present
+- [x] StreamDelete: to delete a stream
 - Eventually hook them up to individual route calls
 
 - Also need to decide which path to use when using each different component (current idea)
