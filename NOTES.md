@@ -46,8 +46,9 @@ Path | Component
 
 - Begin Headers for each different component
   - forms basis of having the ability to login/logout of application
-  - [] Add Header Component to App Component outside of the BrowserRouter
+  - [x] Add Header Component to App Component outside of the BrowserRouter
     - should have links for: Stream List and Login/Logout Button
     - made within `src/components` because this component has NOTHING to do with the Streams components
+    - class names from semantic ui
 
 - [x] Semantic UI, of course
