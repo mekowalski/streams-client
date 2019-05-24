@@ -30,6 +30,7 @@
 - Eventually hook them up to individual route calls
 
 - Also need to decide which path to use when using each different component (current idea)
+- All of these components are related to Streams therefore separating them to a different folder helps organize the chaos
 
 Path | Component
 --- | ---
