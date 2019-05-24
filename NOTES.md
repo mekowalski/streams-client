@@ -54,8 +54,11 @@ Path | Component
 - [x] Semantic UI, of course
 
 - Current issue of `Error: Invariant failed: You should not use <Link> outside a <Router>`
-- [] Need to reconfigure App Hierarchy from:
+- [x] Need to reconfigure App Hierarchy from:
   - `App ---> BrowserRouter/Header` to `App ---> BrowserRouter ---> Route/Route/Header`
   - App Component will render BrowserRouter as is
   - BUT NOW take Header component and move underneath BrowserRouter
   - Header still won't be wrapped inside a Route therefore it will still ALWAYS be visible
+
+
+## App Authentication with Google OAuth
