@@ -52,3 +52,7 @@ Path | Component
     - class names from semantic ui
 
 - [x] Semantic UI, of course
+
+- Current issue of `Error: Invariant failed: You should not use <Link> outside a <Router>`
+- [] Need to reconfigure App Hierarchy from:
+  - `App ---> BrowserRouter/Header` to `App ---> BrowserRouter ---> Route/Route/Header`
