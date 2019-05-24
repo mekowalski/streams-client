@@ -32,9 +32,10 @@
 - Also need to decide which path to use when using each different component (current idea)
 - All of these components are related to Streams therefore separating them to a different folder helps organize the chaos
 
-- [] Begin setting up paths to visit in browser
+- [x] Begin setting up paths to visit in browser
   - hook up routes inside `App.js` file
-  
+  - all routes are working properly to show the correct components
+
 Path | Component
 --- | ---
 / | StreamList
@@ -42,3 +43,7 @@ Path | Component
 /streams/edit | StreamEdit
 /streams/delete | StreamDelete
 /streams/show | StreamShow
+
+- Begin Headers for each different component
+  - forms basis of having the ability to login/logout of application
+  - [] Add Header Component to App Component outside of the BrowserRouter
