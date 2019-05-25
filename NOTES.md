@@ -64,4 +64,5 @@ Path | Component
 ## App Authentication with Google OAuth
 - Header will hold button/link to login with Google
 - [] Use Google OAuth2 authentication flow
-  - propbably ask user for scope of `email` or `profile` via Google Sign-In
+  - probably ask user for scope of `email` or `profile` via Google Sign-In
+  - OAuth for JS Browser Apps(compared to traditional OAuth for Servers)
