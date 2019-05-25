@@ -66,3 +66,8 @@ Path | Component
 - [] Use Google OAuth2 authentication flow
   - probably ask user for scope of `email` or `profile` via Google Sign-In
   - OAuth for JS Browser Apps(compared to traditional OAuth for Servers)
+  1. [x] Create new project at console.developers.google.com/
+  2. [] Set up OAuth confirmation screen
+  3. [] Generate an OAuth Client ID
+  4. [] Install Google's API library, initialize it with OAuth Client ID
+  5. [] Make sure library gets called any time user clicks on 'Login w/ Google' button
