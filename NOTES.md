@@ -75,4 +75,6 @@ Path | Component
       - GoogleAuth: boilerplate
   5. [] Make sure library gets called any time user clicks on 'Login w/ Google' button
     - In Header, show button related to Google authentication
-    - [] `componentDidMount()` for client portion of Google Auth
+    - [x] `componentDidMount()` for client portion of Google Auth
+      - Load client portion of the library, get a CB of when process is complete
+      - CB argument is calle dafter `'cleint:auth2'` library has been loaded to `gapi`

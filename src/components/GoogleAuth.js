@@ -2,9 +2,13 @@ import React from 'react';
 
 class GoogleAuth extends React.Component {
   componentDidMount() {
-    window.gapi.load('client:auth2')
-    //window so that the variable(gapi) is within the window scope inside my browser
-    //create-react-app will understand the varaible(gapi) is available on window scope
+    //1. after successfully loading up client library
+    window.gapi.load('client:auth2', () => {
+      //2. initialize app with clientId that was generated
+      window.gapi.client.init({
+        clientId: '1069443773373-jk72j3l7ov6ad9snjob9fm6hiphf065d.apps.googleusercontent.com'
+      })
+    })
   }
 
   render() {
