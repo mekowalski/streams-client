@@ -78,3 +78,4 @@ Path | Component
     - [x] `componentDidMount()` for client portion of Google Auth
       - Load client portion of the library, get a CB of when process is complete
       - CB argument is calle dafter `'cleint:auth2'` library has been loaded to `gapi`
+    - [] Actually initiate OAuth process
