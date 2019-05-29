@@ -70,4 +70,5 @@ Path | Component
   2. [x] Set up OAuth confirmation screen
   3. [x] Generate an OAuth Client ID
   4. [] Install Google's API library, initialize it with OAuth Client ID
+    - Google doesn't offer this library via NPM, add manual script tag to `index.html` file
   5. [] Make sure library gets called any time user clicks on 'Login w/ Google' button
