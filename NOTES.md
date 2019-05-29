@@ -75,3 +75,4 @@ Path | Component
       - GoogleAuth: boilerplate
   5. [] Make sure library gets called any time user clicks on 'Login w/ Google' button
     - In Header, show button related to Google authentication
+    - [] `componentDidMount()` for client portion of Google Auth
