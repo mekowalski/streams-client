@@ -71,6 +71,7 @@ Path | Component
   3. [x] Generate an OAuth Client ID
   4. [x] Install Google's API library, initialize it with OAuth Client ID
     - Google doesn't offer this library via NPM, add manual script tag to `index.html` file
-    - [] Create new React component to wrap Google API library & usher user through entire OAuth process
+    - [x] Create new React component to wrap Google API library & usher user through entire OAuth process
       - GoogleAuth: boilerplate
   5. [] Make sure library gets called any time user clicks on 'Login w/ Google' button
+    - In Header, show button related to Google authentication
