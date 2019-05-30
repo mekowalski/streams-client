@@ -21,10 +21,23 @@ class GoogleAuth extends React.Component {
     })
   }
 
+  //helper method instead of using logic within render()
+  renderAuthButton() {
+    if (this.state.isSignedIn === null) {
+      return <div> i dont know if i am signed in </div>
+    }
+    else if (this.state.isSignedIn) {
+      return <div> i am signed in </div>
+    }
+    else {
+      return <div> i am not signed in </div>
+    }
+  }
+
   render() {
     return (
       <div>
-        G O O G L E A U T H
+        {this.renderAuthButton()}
       </div>
     )
   }

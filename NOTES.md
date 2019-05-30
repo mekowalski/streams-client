@@ -86,3 +86,4 @@ Path | Component
       - Component-level State, updates with whether or not the user is signed in
       - With updated State, Component will automatically re-render
     3. print the authentication status on the screen
+      - Instead of using logic(if statement) to determine user signed in, build helper method
