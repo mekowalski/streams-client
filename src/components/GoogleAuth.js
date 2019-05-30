@@ -1,6 +1,9 @@
 import React from 'react';
 
 class GoogleAuth extends React.Component {
+  //initialize state object when component class is created
+  state = { isSignedIn: null }
+
   componentDidMount() {
     window.gapi.load('client:auth2', () => {
       window.gapi.client.init({ //this executes an asynchronous request/operation in order to init client
@@ -12,6 +15,8 @@ class GoogleAuth extends React.Component {
       .then(() => {
         //1. ref to auth object and save ref on component class
         this.auth = window.gapi.auth2.getAuthInstance()
+        //2. figure out if user is currently signed in
+        this.setState({ isSignedIn: this.auth.isSignedIn.get() })
       })
     })
   }
