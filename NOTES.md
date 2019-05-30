@@ -83,4 +83,6 @@ Path | Component
     - [] Actually initiate OAuth process
     1. get reference to `auth` object after it is initialized
     2. figure out if user is currently signed in
+      - Component-level State, updates with whether or not the user is signed in
+      - With updated State, Component will automatically re-render
     3. print the authentication status on the screen
