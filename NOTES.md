@@ -77,5 +77,10 @@ Path | Component
     - In Header, show button related to Google authentication
     - [x] `componentDidMount()` for client portion of Google Auth
       - Load client portion of the library, get a CB of when process is complete
-      - CB argument is calle dafter `'cleint:auth2'` library has been loaded to `gapi`
+      - CB argument is called after `'cleint:auth2'` library has been loaded to `gapi`
+
+    - AUTH COMPONENT
     - [] Actually initiate OAuth process
+    1. get reference to `auth` object after it is initialized
+    2. figure out if user is currently signed in
+    3. print the authentication status on the screen
