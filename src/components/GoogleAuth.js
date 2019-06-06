@@ -22,6 +22,13 @@ class GoogleAuth extends React.Component {
     })
   }
 
+  //listener, called anytime the user authentication status changes
+  //will want to update state
+  //value is in library with user's current authentication status of .isSignedIn.get()
+  onAuthChange = () => {
+    this.setState({ isSignedIn: this.auth.isSignedIn.get() })
+  }
+
   renderAuthButton() {
     if (this.state.isSignedIn === null) {
       return <div> i dont know if i am signed in </div>
