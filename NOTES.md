@@ -88,7 +88,11 @@ Path | Component
     3. print the authentication status on the screen
       - Instead of using logic(if statement) to determine user signed in, build helper method
 
-- [] Update Auth State
+- [X] Update Auth State
   - Method on prototype for `.isSignedIn` called listen: f(a), (can pass a callback function to)
   - Passing a CB() to listen: f(a) will invoke anytime the user's auth status is changed
   - wire this up in  `componentDidMount()`
+  - WOOT WOOT, THIS WORKS WHEN MANUALLY SIGNING IN AND OUT IN CONSOLE!!!
+
+- [] Refactor `.then(( => {} ))` statement: `setState({})` is same as `onAuthChange()`
+  - changing setState() to onAuthChange() will make sure to get the current auth status when first initialize the library and update auth state
