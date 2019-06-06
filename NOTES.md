@@ -79,6 +79,9 @@ Path | Component
       - Load client portion of the library, get a CB of when process is complete
       - CB argument is called after `'cleint:auth2'` library has been loaded to `gapi`
 
+  - Display Sign in/out Buttons
+  - [] `renderAuthButton()` needs to actually render a clickable button to sign in/out
+
     - AUTH COMPONENT
     - [x] Actually initiate OAuth process
     1. get reference to `auth` object after it is initialized

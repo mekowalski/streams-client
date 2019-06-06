@@ -22,8 +22,10 @@ class GoogleAuth extends React.Component {
   }
 
   renderAuthButton() {
+    //1st if statement is probably not appropriate, should maybe return nothing is user doesn't know their
+    //sign in/out status
     if (this.state.isSignedIn === null) {
-      return <div> i dont know if i am signed in </div>
+      return null
     }
     else if (this.state.isSignedIn) {
       return <div> i am signed in </div>
