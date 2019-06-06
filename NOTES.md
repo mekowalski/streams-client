@@ -81,6 +81,7 @@ Path | Component
 
   - Display Sign in/out Buttons
   - [] `renderAuthButton()` needs to actually render a clickable button to sign in/out
+    - Buttons display correctly and can be clicked BUT, there is no function yet
 
     - AUTH COMPONENT
     - [x] Actually initiate OAuth process

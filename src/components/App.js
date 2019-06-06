@@ -9,7 +9,7 @@ import Header from './Header';
 
 const App = () => {
   return (
-    <div className='ui container'>
+    <div className='ui container' style={{marginTop: '15px'}}>
       <div>
         <BrowserRouter>
           <div>
