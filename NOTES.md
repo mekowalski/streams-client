@@ -63,7 +63,7 @@ Path | Component
 
 ## App Authentication with Google OAuth
 - Header will hold button/link to login with Google
-- [] Use Google OAuth2 authentication flow
+- [x] Use Google OAuth2 authentication flow
   - probably ask user for scope of `email` or `profile` via Google Sign-In
   - OAuth for JS Browser Apps(compared to traditional OAuth for Servers)
   1. [x] Create new project at console.developers.google.com/
@@ -73,17 +73,22 @@ Path | Component
     - Google doesn't offer this library via NPM, add manual script tag to `index.html` file
     - [x] Create new React component to wrap Google API library & usher user through entire OAuth process
       - GoogleAuth: boilerplate
-  5. [] Make sure library gets called any time user clicks on 'Login w/ Google' button
+  5. [x] Make sure library gets called any time user clicks on 'Login w/ Google' button
     - In Header, show button related to Google authentication
     - [x] `componentDidMount()` for client portion of Google Auth
       - Load client portion of the library, get a CB of when process is complete
       - CB argument is called after `'cleint:auth2'` library has been loaded to `gapi`
 
     - AUTH COMPONENT
-    - [] Actually initiate OAuth process
+    - [x] Actually initiate OAuth process
     1. get reference to `auth` object after it is initialized
     2. figure out if user is currently signed in
       - Component-level State, updates with whether or not the user is signed in
       - With updated State, Component will automatically re-render
     3. print the authentication status on the screen
       - Instead of using logic(if statement) to determine user signed in, build helper method
+
+- [] Update Auth State
+  - Method on prototype for `.isSignedIn` called listen: f(a), (can pass a callback function to)
+  - Passing a CB() to listen: f(a) will invoke anytime the user's auth status is changed
+  - wire this up in  `componentDidMount()`
