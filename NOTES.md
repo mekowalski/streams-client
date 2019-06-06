@@ -96,3 +96,4 @@ Path | Component
 
 - [] Refactor `.then(( => {} ))` statement: `setState({})` is same as `onAuthChange()`
   - changing setState() to onAuthChange() will make sure to get the current auth status when first initialize the library and update auth state
+  - will refactor once Redux is introduced

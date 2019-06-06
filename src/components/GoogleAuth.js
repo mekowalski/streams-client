@@ -9,22 +9,14 @@ class GoogleAuth extends React.Component {
         clientId: '1069443773373-jk72j3l7ov6ad9snjob9fm6hiphf065d.apps.googleusercontent.com',
         scope: 'email'
       })
-      //modify to update auth state
       .then(() => {
         this.auth = window.gapi.auth2.getAuthInstance()
         this.setState({ isSignedIn: this.auth.isSignedIn.get() })
-        //set up event listener
-        //1. reference that auth object
-        //2. call listen() from `isSignedIn` prototype
-        //3. pass in the callback()
-        this.auth.isSignedIn.listen(this.onAuthChange) //this is an additional method/listener
+        this.auth.isSignedIn.listen(this.onAuthChange)
       })
     })
   }
 
-  //listener, called anytime the user authentication status changes
-  //will want to update state
-  //value is in library with user's current authentication status of .isSignedIn.get()
   onAuthChange = () => {
     this.setState({ isSignedIn: this.auth.isSignedIn.get() })
   }
