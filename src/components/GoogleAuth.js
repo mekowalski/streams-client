@@ -37,8 +37,15 @@ class GoogleAuth extends React.Component {
         </button>
       )
     }
+    //if user is signed out, show a button to Sign In with Google
+    //SWEET, THIS ALSO WORKS, NEITHER BUTTONS WORK CORRECTLY YET
     else {
-      return <div> i am not signed in </div>
+      return (
+        <button className='ui green google button'>
+          <i className='google icon' />
+          Sign In with Google
+        </button>
+      )
     }
   }
 
