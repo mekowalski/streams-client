@@ -22,13 +22,9 @@ class GoogleAuth extends React.Component {
   }
 
   renderAuthButton() {
-    //1st if statement is probably not appropriate, should maybe return nothing is user doesn't know their
-    //sign in/out status
     if (this.state.isSignedIn === null) {
       return null
     }
-    //if user is signed in, show a button to Sign Out
-    //HECK YA! AMAZE-BALLS
     else if (this.state.isSignedIn) {
       return (
         <button className='ui red google button'>
@@ -37,8 +33,6 @@ class GoogleAuth extends React.Component {
         </button>
       )
     }
-    //if user is signed out, show a button to Sign In with Google
-    //SWEET, THIS ALSO WORKS, NEITHER BUTTONS WORK CORRECTLY YET
     else {
       return (
         <button className='ui green google button'>
