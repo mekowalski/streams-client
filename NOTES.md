@@ -80,9 +80,9 @@ Path | Component
       - CB argument is called after `'cleint:auth2'` library has been loaded to `gapi`
 
   - Display Sign in/out Buttons
-  - [] `renderAuthButton()` needs to actually render a clickable button to sign in/out
+  - [x] `renderAuthButton()` needs to actually render a clickable button to sign in/out
     - Buttons display correctly and can be clicked BUT, there is no function yet
-    - [] Add click event handlers for both buttons
+    - [x] Add click event handlers for both buttons
       - Helper methods for sign in/out
 
     - AUTH COMPONENT
@@ -103,3 +103,6 @@ Path | Component
 - [] Refactor `.then(( => {} ))` statement: `setState({})` is same as `onAuthChange()`
   - changing setState() to onAuthChange() will make sure to get the current auth status when first initialize the library and update auth state
   - will refactor once Redux is introduced
+
+- Have an entire component dedicated to authentication with Google
+- Currently `GoogleAuth` is a React Component, Redux is eventually going to take care of this state

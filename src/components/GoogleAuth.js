@@ -17,18 +17,17 @@ class GoogleAuth extends React.Component {
     })
   }
 
+  //helper method: to update the authentication state (is user signed in/out)
   onAuthChange = () => {
     this.setState({ isSignedIn: this.auth.isSignedIn.get() })
   }
 
-  //both helpers will want to access 'auth' instance (this.auth)
-  //these aren't necessary, it's a bit more extra work, but it helps make this component clear to others
-  //when called () aren't put on after the methods
-  //that means the method is called the instance a component is rendered, which isn't the behavior needed
+  //helper method: to sign the user in with the auth instance and property
   onSignIn = () => {
     this.auth.signIn()
   }
 
+  //helper method: to sign the user out with the auth instance and property
   onSignOut = () => {
     this.auth.signOut()
   }
