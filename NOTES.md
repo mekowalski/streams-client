@@ -112,4 +112,4 @@ Path | Component
 - Current naming of `onSignIn` and `onSignOut` is actually a bit unclear
 - Both seem to veer towards the user ACTUALLY successfully signing-in/out
 - This isn't the purpose of the callback, the methods should be called when the user is ATTEMPTING to sign in/out
-- [] Change names of both event handlers
+- [x] Change names of both event handlers
