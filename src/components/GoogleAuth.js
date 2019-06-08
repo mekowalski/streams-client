@@ -23,12 +23,14 @@ class GoogleAuth extends React.Component {
   }
 
   //helper method: to sign the user in with the auth instance and property
-  onSignIn = () => {
+  //these helper method names are a bit more descriptive for being called with either buttons are clicked
+  //no functional change, just to communicate functionality to others viewing code
+  onSignInClick = () => {
     this.auth.signIn()
   }
 
   //helper method: to sign the user out with the auth instance and property
-  onSignOut = () => {
+  onSignOutClick = () => {
     this.auth.signOut()
   }
 
@@ -38,7 +40,7 @@ class GoogleAuth extends React.Component {
     }
     else if (this.state.isSignedIn) {
       return (
-        <button onClick={this.onSignOut} className='ui red google button'>
+        <button onClick={this.onSignOutClick} className='ui red google button'>
           <i className='google icon' />
           Sign Out
         </button>
@@ -46,7 +48,7 @@ class GoogleAuth extends React.Component {
     }
     else {
       return (
-        <button onClick={this.onSignIn} className='ui green google button'>
+        <button onClick={this.onSignInClick} className='ui green google button'>
           <i className='google icon' />
           Sign In with Google
         </button>
