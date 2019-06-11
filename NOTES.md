@@ -113,3 +113,5 @@ Path | Component
 - Both seem to veer towards the user ACTUALLY successfully signing-in/out
 - This isn't the purpose of the callback, the methods should be called when the user is ATTEMPTING to sign in/out
 - [x] Change names of both event handlers
+
+- Minor test change
