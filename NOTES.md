@@ -122,3 +122,4 @@ Path | Component
 - [] Reducers:
   - `src/reducers` => `index.js` (combineReducers, dummy reducer)
 - [] Redux Store:
+  - `src/index.js`: Provider, createStore, reducers
