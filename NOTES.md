@@ -115,8 +115,10 @@ Path | Component
 - [x] Change names of both event handlers
 
 - REDUXXX
-- [] Install Redux and react-redux
+- [x] Install Redux and react-redux
 
 - [] Action Creators:
+  - `src/actions` => `index.js` (holding all action creators)
 - [] Reducers:
+  - `src/reducers` => `index.js` (combineReducers, dummy reducer)
 - [] Redux Store:
