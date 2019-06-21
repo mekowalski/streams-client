@@ -20,8 +20,13 @@ class GoogleAuth extends React.Component {
   }
 
   //helper method: to update the authentication state (is user signed in/out)
-  onAuthChange = () => {
-    this.setState({ isSignedIn: this.auth.isSignedIn.get() })
+  //this is actually being called with a boolean argument of true/false
+  //don't have to reach back into auth instance and call isSignedIn.get()
+  //1. can instead receive it as an argument
+  //2. no component-level state
+  //3. replace with if statement
+  onAuthChange = (isSignedIn) => {
+    
   }
 
   //helper method: to sign the user in with the auth instance and property

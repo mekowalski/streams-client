@@ -121,6 +121,7 @@ Path | Component
   - `src/actions` => `index.js` (holding all action creators)
   - [] Wire up to GoogleAuth component
     - use connect() and 2 action creators
+    - need to make sure when user signs in/out, call the appropriate action creator
 
 - [] Reducers:
   - `src/reducers` => `index.js` (combineReducers, dummy reducer)
