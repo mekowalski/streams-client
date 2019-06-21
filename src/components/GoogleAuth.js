@@ -3,17 +3,19 @@ import { connect } from 'react-redux';
 import { signIn, signOut } from '../actions';
 
 class GoogleAuth extends React.Component {
-  state = { isSignedIn: null }
-
+  //1. remove state default initialization
   componentDidMount() {
     window.gapi.load('client:auth2', () => {
       window.gapi.client.init({
         clientId: '1069443773373-jk72j3l7ov6ad9snjob9fm6hiphf065d.apps.googleusercontent.com',
         scope: 'email'
       })
+      //2. need to make sure to dispatch initial action when finishing initializing library
+      //to indicate whether or not user is signed in
+      //call either sign in OR sign out
       .then(() => {
         this.auth = window.gapi.auth2.getAuthInstance()
-        this.setState({ isSignedIn: this.auth.isSignedIn.get() })
+        this.onAuthChange(this.auth.isSignedIn.get())
         this.auth.isSignedIn.listen(this.onAuthChange)
       })
     })
@@ -42,11 +44,12 @@ class GoogleAuth extends React.Component {
     this.auth.signOut()
   }
 
+  //3. rather than reference state, update it to props
   renderAuthButton() {
-    if (this.state.isSignedIn === null) {
+    if (this.props.isSignedIn === null) {
       return null
     }
-    else if (this.state.isSignedIn) {
+    else if (this.props.isSignedIn) {
       return (
         <button onClick={this.onSignOutClick} className='ui red google button'>
           <i className='google icon' />
@@ -79,5 +82,4 @@ const mapStateToProps = (state) => {
   return { isSignedIn: state.auth.isSignedIn }
 }
 
-//presently don't have mapstatetoprops yet
-export default connect(null, { signIn, signOut })(GoogleAuth)
+export default connect(mapStateToProps, { signIn, signOut })(GoogleAuth);
