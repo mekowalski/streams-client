@@ -125,7 +125,8 @@ Path | Component
 
 - [] Reducers:
   - `src/reducers` => `index.js` (combineReducers, dummy reducer)
-  - Auth Reducer to record whether or not the user is signed in
+  - Auth Reducer to record whether or not the user is signed in at any point in time
 
 - [] Redux Store:
   - `src/index.js`: Provider, createStore, reducers
+  - Purpose of recording auth status inside Redux Store is to make sure it's available to other components
