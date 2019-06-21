@@ -119,6 +119,7 @@ Path | Component
 
 - [] Action Creators:
   - `src/actions` => `index.js` (holding all action creators)
+  - Wire up to GoogleAuth component
 - [] Reducers:
   - `src/reducers` => `index.js` (combineReducers, dummy reducer)
 - [] Redux Store:
