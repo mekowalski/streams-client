@@ -122,20 +122,21 @@ Path | Component
   - [x] Wire up to GoogleAuth component
     - use connect() and 2 action creators
     - need to make sure when user signs in/out, call the appropriate action creator
-    - [] Refactor
 
 - [x] Reducers:
   - `src/reducers` => `index.js` (combineReducers, dummy reducer)
   - Auth Reducer to record whether or not the user is signed in at any point in time
   - Import to `reducers/index.js` file
-  - [] Refactor:
 
-- [] Redux Store:
+- [x] Redux Store:
   - `src/index.js`: Provider, createStore, reducers
   - Purpose of recording auth status inside Redux Store is to make sure it's available to other components
   - Close the loop, record authentication status inside Redux Store
   - Need to make sure GoogleAuth component shows either sign in/out button depending on user status
   - Communicate State back to GoogleAuth component
-  - [] Refactor GoogleAuth to NO LONGER have Component-level state
+  - [x] Refactor GoogleAuth to NO LONGER have Component-level state
 
-- Current issue with Sign in/out Button not displaying
+- Current issue with Sign in/out Button not displaying(FIXED)
+
+- [] Refactor: technique to make sure there are no types in transcription between Reducers/Action Creators
+  - `actions/types.js`
