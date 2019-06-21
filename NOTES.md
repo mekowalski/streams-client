@@ -117,14 +117,15 @@ Path | Component
 - REDUXXX
 - [x] Install Redux and react-redux
 
-- [] Action Creators:
+- [x] Action Creators:
   - `src/actions` => `index.js` (holding all action creators)
-  - [] Wire up to GoogleAuth component
+  - [x] Wire up to GoogleAuth component
     - use connect() and 2 action creators
     - need to make sure when user signs in/out, call the appropriate action creator
 
 - [] Reducers:
   - `src/reducers` => `index.js` (combineReducers, dummy reducer)
+  - Auth Reducer to record whether or not the user is signed in
 
 - [] Redux Store:
   - `src/index.js`: Provider, createStore, reducers
