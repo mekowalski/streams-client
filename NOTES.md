@@ -138,5 +138,5 @@ Path | Component
 
 - Current issue with Sign in/out Button not displaying(FIXED)
 
-- [] Refactor: technique to make sure there are no types in transcription between Reducers/Action Creators
+- [x] Refactor: technique to make sure there are no types in transcription between Reducers/Action Creators
   - `actions/types.js`
