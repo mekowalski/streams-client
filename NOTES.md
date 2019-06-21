@@ -135,3 +135,5 @@ Path | Component
   - Need to make sure GoogleAuth component shows either sign in/out button depending on user status
   - Communicate State back to GoogleAuth component
   - [] Refactor GoogleAuth to NO LONGER have Component-level state
+
+- Current issue with Sign in/out Button not displaying
