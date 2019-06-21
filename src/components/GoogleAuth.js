@@ -73,5 +73,11 @@ class GoogleAuth extends React.Component {
   }
 }
 
+//add mapStateToProps(), called with state object
+//isSignedIn will be either: null, true or false
+const mapStateToProps = (state) => {
+  return { isSignedIn: state.auth.isSignedIn }
+}
+
 //presently don't have mapstatetoprops yet
 export default connect(null, { signIn, signOut })(GoogleAuth)

@@ -134,3 +134,4 @@ Path | Component
   - Close the loop, record authentication status inside Redux Store
   - Need to make sure GoogleAuth component shows either sign in/out button depending on user status
   - Communicate State back to GoogleAuth component
+  - [] Refactor GoogleAuth to NO LONGER have Component-level state
