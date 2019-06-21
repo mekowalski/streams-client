@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
+import authReducer from './authReducer';
 
-//dummy reducer to get application working for now
+//assign to key on state object
 export default combineReducers({
-  replaceMe: () => 'twenty-seven'
+  auth: authReducer
 })
