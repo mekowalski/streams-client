@@ -148,3 +148,8 @@ Path | Component
 - Need to make sure each stream is associated to the user who created it
 - To do this, need to create a user ID record for each stream created
 - GoogleAuth provides a user ID via `gapi.auth2.getAuthInstance().currentUser.get().getId()`
+
+
+### Using Redux DevTools
+- See `ReduxSection/redux-dev-tools` for more info
+- [] Hook up application to work with Redux DevTools

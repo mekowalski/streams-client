@@ -5,8 +5,6 @@ const INITIAL_STATE = {
   userId: null
 }
 
-//finally, when a user signs in, not only update isSignedIn property but also update user ID flag
-//ALSO want to clear userId property when a user signs out
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case SIGN_IN:
