@@ -140,3 +140,11 @@ Path | Component
 
 - [x] Refactor: technique to make sure there are no types in transcription between Reducers/Action Creators
   - `actions/types.js`
+
+
+### User ID
+- Entire Idea of this Application is to eventually have API Server to store a list of all streams created by the user
+- Inside the mockups, when a user is logged in, they should be able to delete/edit the streams they've created
+- Need to make sure each stream is associated to the user who created it
+- To do this, need to create a user ID record for each stream created
+- GoogleAuth provides a user ID via `gapi.auth2.getAuthInstance().currentUser.get().getId()`
