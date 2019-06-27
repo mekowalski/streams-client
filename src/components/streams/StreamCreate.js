@@ -23,6 +23,12 @@ class StreamCreate extends React.Component {
     )
   }
 
+  //this is the common practice for keeping the browser from refreshing as a form is being submitted to a
+  //backend server
+  onSubmit(event) {
+    event.preventDefault()
+  }
+
   render() {
     return (
       <form className='ui form'>

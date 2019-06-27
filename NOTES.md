@@ -181,5 +181,6 @@ Path | Component
       - Not certain how to fix this yet
 
     - [x] Controlled Element: for `<input />` for title and description inputs
-
-    - [] Submit Form: get a CB that recognizes a form being submitted in order to create New Stream
+  4. [] Submit Form: get a CB that recognizes a form being submitted in order to create New Stream
+    - User will want to click a button to create a stream, or do what the form is supposed to do
+    - helper method: `onSubmit()`
