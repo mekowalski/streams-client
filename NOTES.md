@@ -176,4 +176,6 @@ Path | Component
     - automatically handle events
     - [x] Helper method: `renderInput()`
       - Rather than just returning a bland input, return a blob of JSX, helps guide the form
+      - multi-line expression
+      
     - [x] Controlled Element: for `<input />` for title and description inputs
