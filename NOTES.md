@@ -168,5 +168,6 @@ Path | Component
   - When submitted, reach out to an API server (not yet made) and create a new Stream record with a User
   1. [x] Refactor functional StreamCreate comp to Class comp
     - eventually have helper methods to organize code
-  2. [] Import Redux Form and 2 helpers (Field, reduxForm)
-    - hook up `reduxForm` to StreamCreate comp(similar nature to connect)
+  2. [x] Import Redux Form and 2 helpers (Field, reduxForm)
+    - hook up `reduxForm` to StreamCreate comp (similar nature to connect)
+    - configure `reduxForm` with an object (receives a single object)
