@@ -174,4 +174,5 @@ Path | Component
   3. [] Create a Field JSX for Form (provide some sort of prop)
     - get text input to appear when making use of Field element
     - automatically handle events
-    - [] Helper method: `renderInput()`
+    - [x] Helper method: `renderInput()`
+    - [] Controlled Element: for `<input />` for title and description inputs

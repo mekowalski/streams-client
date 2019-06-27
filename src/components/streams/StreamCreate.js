@@ -2,11 +2,13 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class StreamCreate extends React.Component {
-  renderInput() {
+  renderInput(formProps) {
+    console.log(formProps)
     return (
       <input />
     )
   }
+  //2 console logs because 2 separate inputs are showing, causing renderInput to be called twice
 
   render() {
     return (
@@ -17,7 +19,6 @@ class StreamCreate extends React.Component {
     )
   }
 }
-//Field name property of label that will be managed: title and description
 
 export default reduxForm({
   form: 'streamCreate'
