@@ -177,5 +177,8 @@ Path | Component
     - [x] Helper method: `renderInput()`
       - Rather than just returning a bland input, return a blob of JSX, helps guide the form
       - multi-line expression
-      
+      - Currently the `label` isn't working, I don't have the newest refactor for `renderInput()` but I didn't think it would be an issue.  I may have to destructure the input element object
+      - Not certain how to fix this yet
+
+
     - [x] Controlled Element: for `<input />` for title and description inputs
