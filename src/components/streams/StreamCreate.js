@@ -4,9 +4,7 @@ import { Field, reduxForm } from 'redux-form';
 class StreamCreate extends React.Component {
   renderInput() {
     return (
-      <div>
-        INPUT
-      </div>
+      <input />
     )
   }
 
