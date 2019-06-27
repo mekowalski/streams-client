@@ -152,4 +152,10 @@ Path | Component
 
 ### Using Redux DevTools
 - See `ReduxSection/redux-dev-tools` for more info
-- [] Hook up application to work with Redux DevTools
+- [x] Hook up application to work with Redux DevTools
+
+
+## Redux Forms
+- [] Create Stream Form
+  - Enter Title, Description
+  - When submitted, reach out to an API server (not yet made) and create a new Stream record with a User
