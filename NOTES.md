@@ -158,6 +158,10 @@ Path | Component
 ## Redux Forms
 1. [x] Install redux-forms
 2. [] Wire up Redux Forms to application
+   - Redux From will manage all data inside Store, in order to this, wire up a Reducer to the Store
+   - This Reducer has been created by Redux Form library
+   - Pull this Reducer from library and hook it up to `combineReducers`
+   
 - [] Create Stream Form
   - Enter Title, Description
   - When submitted, reach out to an API server (not yet made) and create a new Stream record with a User
