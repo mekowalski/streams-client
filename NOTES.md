@@ -156,6 +156,7 @@ Path | Component
 
 
 ## Redux Forms
+1. [] Install redux-forms
 - [] Create Stream Form
   - Enter Title, Description
   - When submitted, reach out to an API server (not yet made) and create a new Stream record with a User
