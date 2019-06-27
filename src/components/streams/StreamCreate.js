@@ -2,6 +2,8 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class StreamCreate extends React.Component {
+  //2. anytime Field component called renderInput() it also passed in a set of properties
+  //3. the properties were passed along to the Text Input (<input />tag)
   renderInput(formProps) {
     return (
       <input
@@ -10,12 +12,11 @@ class StreamCreate extends React.Component {
       />
     )
   }
-  //2 console logs because 2 separate inputs are showing, causing renderInput to be called twice
-  //take formProps, take input property out of it, and hook up the relevant properties to text input (L7)
 
   render() {
     return (
       <form>
+      //1. these 2 Fields components to renderInput()
         <Field name='title' component={this.renderInput} />
         <Field name='description' component={this.renderInput} />
       </form>
@@ -26,5 +27,3 @@ class StreamCreate extends React.Component {
 export default reduxForm({
   form: 'streamCreate'
 })(StreamCreate)
-//RF is now handling text inputs for the 2 fields via: taking props out of formProps and passing them to
-//input element for onChange and value props

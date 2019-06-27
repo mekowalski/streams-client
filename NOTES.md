@@ -175,4 +175,5 @@ Path | Component
     - get text input to appear when making use of Field element
     - automatically handle events
     - [x] Helper method: `renderInput()`
+      - Rather than just returning a bland input, return a blob of JSX, helps guide the form
     - [x] Controlled Element: for `<input />` for title and description inputs
