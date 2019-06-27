@@ -163,5 +163,8 @@ Path | Component
    - Pull this Reducer from library and hook it up to `combineReducers`
 
 - [] Create Stream Form
+  - work from `streams/new` route
   - Enter Title, Description
   - When submitted, reach out to an API server (not yet made) and create a new Stream record with a User
+  1. [] Refactor functional StreamCreate comp to Class comp
+    - eventually have helper methods to organize code
