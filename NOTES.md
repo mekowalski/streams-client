@@ -180,5 +180,6 @@ Path | Component
       - Currently the `label` isn't working, I don't have the newest refactor for `renderInput()` but I didn't think it would be an issue.  I may have to destructure the input element object
       - Not certain how to fix this yet
 
-
     - [x] Controlled Element: for `<input />` for title and description inputs
+
+    - [] Submit Form: get a CB that recognizes a form being submitted in order to create New Stream

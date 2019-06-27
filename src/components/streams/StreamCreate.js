@@ -13,6 +13,7 @@ class StreamCreate extends React.Component {
   //     <div>
   //   )
   // }
+  //i want to revert back to this method layout eventually
   renderInput({ input, label }) {
     return (
       <div>
