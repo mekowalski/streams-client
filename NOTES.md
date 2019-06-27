@@ -171,3 +171,5 @@ Path | Component
   2. [x] Import Redux Form and 2 helpers (Field, reduxForm)
     - hook up `reduxForm` to StreamCreate comp (similar nature to connect)
     - configure `reduxForm` with an object (receives a single object)
+  3. [] Create a Field JSX for Form (provide some sort of prop)
+    - get text input to appear when making use of Field element
