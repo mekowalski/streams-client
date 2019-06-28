@@ -184,6 +184,7 @@ Path | Component
   4. [x] Submit Form: get a CB that recognizes a form being submitted in order to create New Stream
     - User will want to click a button to create a stream, or do what the form is supposed to do
     - helper method: `onSubmit()`
-  5. [] Validate Form Inputs: define `validate()` with formValues
+  5. [x] Validate Form Inputs: define `validate()` with formValues
     - Still need to wire up to Redux Form/handle error messages
     - [x] Only show error messages to user after submitting invalid form
+  6. [] Submit Form: need to create stream and actually save it
