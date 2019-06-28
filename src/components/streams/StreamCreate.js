@@ -14,7 +14,11 @@ class StreamCreate extends React.Component {
   //   )
   // }
   //i want to revert back to this method layout eventually
-  renderInput({ input, label }) {
+
+  //meta is from the Object of the Fields components
+  //meta also will hold an attribute for 'error' with the attached message from validate()
+  renderInput({ input, label, meta }) {
+    console.log(meta)
     return (
       <div>
         <label>{label}</label>
@@ -38,23 +42,18 @@ class StreamCreate extends React.Component {
   }
 }
 
-//defined outside class
-//actual opportunity to validate Form Values
-//inspect formValues object with an if statement
 const validate = (formValues) => {
-  //define errors message
   const errors = {}
   if (!formValues.title) {
-    //only run if the user did NOT enter a title(basic validation)
     errors.title = 'You must enter a title'
   }
   if (!formValues.description) {
     errors.description = 'You must enter a description, even if it is a short one'
   }
-  //return the errors object after adding on the appropriate properties
   return errors
 }
 
 export default reduxForm({
-  form: 'streamCreate'
+  form: 'streamCreate',
+  validate //validate is the validate() that was created
 })(StreamCreate)
