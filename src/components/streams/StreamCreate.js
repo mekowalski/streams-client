@@ -19,14 +19,12 @@ class StreamCreate extends React.Component {
   //meta also will hold an attribute for 'error' with the attached message from validate()
   //meta.errors will be used to display the error messages on the screen
   renderInput({ input, label, meta }) {
+    console.log(meta) //meta.touched is a boolean reflecting whether or not a user has touched the field
     return (
       <div>
         <label>{label}</label>
         <input {...input} />
         <div>{meta.error}</div>
-      {
-         //will probably want to show this when the user actually submits without filled text
-      }
       </div>
     )
   }
@@ -59,5 +57,5 @@ const validate = (formValues) => {
 
 export default reduxForm({
   form: 'streamCreate',
-  validate //validate is the validate() that was created
+  validate
 })(StreamCreate)
