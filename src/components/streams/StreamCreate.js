@@ -38,6 +38,12 @@ class StreamCreate extends React.Component {
   }
 }
 
+//defined outside class
+//actual opportunity to validate Form Values
+const validate = (formValues) => {
+
+}
+
 export default reduxForm({
   form: 'streamCreate'
 })(StreamCreate)

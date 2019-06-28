@@ -184,4 +184,4 @@ Path | Component
   4. [x] Submit Form: get a CB that recognizes a form being submitted in order to create New Stream
     - User will want to click a button to create a stream, or do what the form is supposed to do
     - helper method: `onSubmit()`
-  5. [] Validate Form Inputs
+  5. [] Validate Form Inputs: define `validate()` with formValues
