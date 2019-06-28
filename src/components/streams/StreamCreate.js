@@ -17,12 +17,13 @@ class StreamCreate extends React.Component {
 
   //meta is from the Object of the Fields components
   //meta also will hold an attribute for 'error' with the attached message from validate()
+  //meta.errors will be used to display the error messages on the screen
   renderInput({ input, label, meta }) {
-    console.log(meta)
     return (
       <div>
         <label>{label}</label>
         <input {...input} />
+        <div>{meta.error}</div>
       </div>
     )
   }
