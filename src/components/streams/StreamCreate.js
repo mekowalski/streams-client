@@ -40,8 +40,11 @@ class StreamCreate extends React.Component {
 
 //defined outside class
 //actual opportunity to validate Form Values
+//inspect formValues object with an if statement
 const validate = (formValues) => {
-
+  if (!formValues.title) {
+    //only run if the user did NOT enter a title(basic validation)
+  }
 }
 
 export default reduxForm({
