@@ -186,4 +186,4 @@ Path | Component
     - helper method: `onSubmit()`
   5. [] Validate Form Inputs: define `validate()` with formValues
     - Still need to wire up to Redux Form/handle error messages
-    - [] Only show error messages to user after submitting invalid form
+    - [x] Only show error messages to user after submitting invalid form
