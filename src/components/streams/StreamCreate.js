@@ -51,6 +51,8 @@ const validate = (formValues) => {
   if (!formValues.description) {
     errors.description = 'You must enter a description, even if it is a short one'
   }
+  //return the errors object after adding on the appropriate properties
+  return errors
 }
 
 export default reduxForm({

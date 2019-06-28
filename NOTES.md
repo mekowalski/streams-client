@@ -185,3 +185,4 @@ Path | Component
     - User will want to click a button to create a stream, or do what the form is supposed to do
     - helper method: `onSubmit()`
   5. [] Validate Form Inputs: define `validate()` with formValues
+    - Still need to wire up to Redux Form/handle error messages
