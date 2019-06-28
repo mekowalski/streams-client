@@ -42,8 +42,14 @@ class StreamCreate extends React.Component {
 //actual opportunity to validate Form Values
 //inspect formValues object with an if statement
 const validate = (formValues) => {
+  //define errors message
+  const errors = {}
   if (!formValues.title) {
     //only run if the user did NOT enter a title(basic validation)
+    errors.title = 'You must enter a title'
+  }
+  if (!formValues.description) {
+    errors.description = 'You must enter a description, even if it is a short one'
   }
 }
 
