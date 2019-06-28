@@ -15,16 +15,25 @@ class StreamCreate extends React.Component {
   // }
   //i want to revert back to this method layout eventually
 
-  //meta is from the Object of the Fields components
-  //meta also will hold an attribute for 'error' with the attached message from validate()
-  //meta.errors will be used to display the error messages on the screen
+  //helper method will hold a decent amount out logic to show message and render out error message with
+  //appropriate className and syling
+  renderError({ error, touched }) //destructure error and touched from meta
+    if (touched && error) { //if user has touched form and there's an error message
+      return ( //return error message to show user
+        <div className='ui error message'>
+          <div className='header'>{error}</div>
+        </div>
+      )
+    }
+  }
+
+
   renderInput({ input, label, meta }) {
-    console.log(meta) //meta.touched is a boolean reflecting whether or not a user has touched the field
     return (
       <div>
         <label>{label}</label>
         <input {...input} />
-        <div>{meta.error}</div>
+        {this.renderError(meta)}
       </div>
     )
   }
