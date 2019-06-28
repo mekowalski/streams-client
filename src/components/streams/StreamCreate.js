@@ -24,6 +24,9 @@ class StreamCreate extends React.Component {
         <label>{label}</label>
         <input {...input} />
         <div>{meta.error}</div>
+      {
+         //will probably want to show this when the user actually submits without filled text
+      }
       </div>
     )
   }
