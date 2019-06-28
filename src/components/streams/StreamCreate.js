@@ -17,7 +17,7 @@ class StreamCreate extends React.Component {
 
   //helper method will hold a decent amount out logic to show message and render out error message with
   //appropriate className and syling
-  renderError({ error, touched }) //destructure error and touched from meta
+  renderError({ error, touched }) {//destructure error and touched from meta
     if (touched && error) { //if user has touched form and there's an error message
       return ( //return error message to show user
         <div className='ui error message'>
@@ -28,7 +28,7 @@ class StreamCreate extends React.Component {
   }
 
 
-  renderInput({ input, label, meta }) {
+  renderInput = ({ input, label, meta }) => {
     return (
       <div>
         <label>{label}</label>
