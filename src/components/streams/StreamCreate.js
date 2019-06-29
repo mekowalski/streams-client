@@ -15,19 +15,16 @@ class StreamCreate extends React.Component {
   // }
   //i want to revert back to this method layout eventually
 
-  //helper method will hold a decent amount out logic to show message and render out error message with
-  //appropriate className and syling
-  renderError({ error, touched }) {//destructure error and touched from meta
-    if (touched && error) { //if user has touched form and there's an error message
-      return ( //return error message to show user
+
+  renderError({ error, touched }) {
+    if (touched && error) {
+      return (
         <div className='ui error message'>
           <div className='header'>{error}</div>
         </div>
       )
     }
   }
-  //currently error messages are being shown because by default Semantic UI hides error messages
-  //display: none, CSS hiding message from user
 
   renderInput = ({ input, label, meta }) => {
     return (
@@ -53,7 +50,6 @@ class StreamCreate extends React.Component {
     )
   }
 }
-//form needs a classname with error in order to show error messages
 
 const validate = (formValues) => {
   const errors = {}
