@@ -188,3 +188,4 @@ Path | Component
     - Still need to wire up to Redux Form/handle error messages
     - [x] Only show error messages to user after submitting invalid form
   6. [] Submit Form: need to create stream and actually save it
+    - Attempt to make `POST` request to API Server to create new stream record
