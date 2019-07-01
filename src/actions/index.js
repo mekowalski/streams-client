@@ -16,9 +16,10 @@ export const signOut = () => {
 
 //called with a list of values entered into Form, as argument
 //define async action creator, making use of redux-thunk
-//return arrow () with dispatch as 1st argument
+//return arrow () with dispatch as 1st argument with async
+//finally inside, make POSt request to '/streams' endpoint @localhost:3001 and try putting in all formValues
 export const createStream = (formValues) => {
-  return (dispatch) => {
-
+  return async (dispatch) => {
+    streams.pot('/streams', formValues)
   }
 }
