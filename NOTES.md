@@ -162,7 +162,7 @@ Path | Component
    - This Reducer has been created by Redux Form library
    - Pull this Reducer from library and hook it up to `combineReducers`
 
-- [] Create Stream Form
+- [x] Create Stream Form
   - work from `streams/new` route
   - Enter Title, Description
   - When submitted, reach out to an API server (not yet made) and create a new Stream record with a User
@@ -187,5 +187,9 @@ Path | Component
   5. [x] Validate Form Inputs: define `validate()` with formValues
     - Still need to wire up to Redux Form/handle error messages
     - [x] Only show error messages to user after submitting invalid form
-  6. [] Submit Form: need to create stream and actually save it
-    - Attempt to make `POST` request to API Server to create new stream record
+
+
+- [] Submit Form: need to create stream and actually save it
+  - Attempt to make `POST` request to API Server to create new stream record
+  - [] Install Axios AND `redux-thunk`
+    - both used to write async action creator
