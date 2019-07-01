@@ -47,3 +47,10 @@ export const fetchStream = (id) => {
 //a bit more challenging, any time a record is updated
 //need to provide both ID and the update to that record as arguments to action creator
 //combine idea of receiving ID from fetchStream WITH passing in formValues from createStream as arguments
+export const editStream = (id, formValues) => {
+  return async (dispatch) => {
+    const response = await streams.put(`/streams/${id}`, formValues)
+
+    dispatch({ type: EDIT_STREAM, payload: response.data })
+  }
+}
