@@ -54,3 +54,14 @@ export const editStream = (id, formValues) => {
     dispatch({ type: EDIT_STREAM, payload: response.data })
   }
 }
+
+//action creator for deleting a record
+//get nothing back therefore payload property will be different
+//won't need a response, dispatch won't have a payload of response
+export const deleteStream = (id) => {
+  return async (dispatch) => {
+    await streams.delete(`/streams/${id}`)
+
+    dispatch({ type: DELETE_STREAM, payload: id })
+  }
+}
