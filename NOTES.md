@@ -204,4 +204,5 @@ Path | Component
     - Minor issue: `reduxForm()()` is wired up similarly as `connect()()` would be
       - how to wire up both `connect` and `reduxForm` at the same time
       - Modified syntax to stack functions via a `'wrapped'` variable
-  - [] `onSubmit()` calls action creator with formValues
+  - [x] `onSubmit()` calls action creator with formValues
+  - [] Need to actually wire up redux-thunk

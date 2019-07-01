@@ -38,11 +38,7 @@ class StreamCreate extends React.Component {
     )
   }
 
-  //when user tries to submit form, inputs will be validated
-  //if inputs are valid, then call onSubmit,
-  //which will call AC: createStream,
-  //which will attempt to make a POST request over to API server and create a new stream
-  onSubmit(formValues) {
+  onSubmit = (formValues) => {
     this.props.createStream(formValues)
   }
 
@@ -69,7 +65,7 @@ const validate = (formValues) => {
 }
 
 //modified syntax to stack functions via a `'wrapped'` variable
-const fromWrapped = reduxForm({
+const formWrapped = reduxForm({
   form: 'streamCreate',
   validate
 })(StreamCreate)
