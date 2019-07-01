@@ -1,5 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
+import { streamCreate } from '../../actions';
 
 class StreamCreate extends React.Component {
   // renderInput(formProps, label) {

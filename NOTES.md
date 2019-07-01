@@ -200,3 +200,6 @@ Path | Component
   - [] Wire up Action Creator to StreamCreate component
     - attempt to call it
     - try to successfully create new stream on API
+    - import connect() to wire up AC and component
+    - Minor issue: `reduxForm()()` is wired up similarly as `connect()()` would be
+      - how to wire up both `connect` and `reduxForm` at the same time
