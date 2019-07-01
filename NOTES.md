@@ -207,8 +207,10 @@ Path | Component
   - [x] `onSubmit()` calls action creator with formValues
   - [x] Need to actually wire up redux-thunk
 
+
+### Action Creators, Dispatch, Actions(type & payload) AND Reducers
 - [x] Need to get a handle of response that comes back once a form is submitted
-- [] Dispatch an action with payload of that new;y-created, specific stream
+- [x] Dispatch an action with payload of that new;y-created, specific stream
   - need a `type`, constant type values, this can be defined in `actions/types.js`
   - create new type and import it into `actions/index.js`
 

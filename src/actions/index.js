@@ -15,8 +15,11 @@ export const signOut = () => {
 }
 
 //Need to get a handle of response that comes back once a form is submitted
+//dispatch new action type with a payload of response.data
 export const createStream = (formValues) => {
   return async (dispatch) => {
     const response = await streams.post('/streams', formValues)
+
+    dispatch({ type: CREATE_STREAM, payload: response.data })
   }
 }
