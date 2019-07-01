@@ -23,3 +23,22 @@ export const createStream = (formValues) => {
     dispatch({ type: CREATE_STREAM, payload: response.data })
   }
 }
+
+//trying action creator for most simple/common action type: getting a list of records
+export const fetchStreams = () => {
+  return async (dispatch) => {
+    const response = await streams.get('/streams')
+
+    dispatch({ type: FETCH_STREAMS, payload:response.data })
+  }
+}
+
+//action creators for the single record
+//will want to pass in an id for the single stream to fetch
+export const fetchStream = (id) => {
+  return async (dispatch) => {
+    const response = await streams.get(`/streams/${id}`)
+
+    dispatch({ type: FETCH_STREAM, payload: response.data })
+  }
+}
