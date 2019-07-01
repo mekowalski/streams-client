@@ -218,8 +218,10 @@ Path | Component
   1. The response is what the API Server returns when a request is made to it
   2. If RESTful convention is truly being followed, the response is pretty predictable
   3. Although there isn't a Component to show a list of records, edit a record, delete a record, then all Action Creators can be created altogether, when RESTful convention is followed
-  4. Try to create all Action Creators at one point in time(RIGHT NOW)
-  - ~~creating stream~~ / list of streams / getting 1 stream / editing a stream / deleting a stream
+  4. [x] Try to create all Action Creators at one point in time(RIGHT NOW)
+  - ~~creating stream~~ / ~~list of streams~~ / ~~getting 1 stream~~ / ~~editing a stream~~ / ~~deleting a stream~~
+  - [X] Import these action types in `actions/index.js`
+  - [] Create Action Creators for each one
   - Eventually wire these up to their respective components when those are programmed
 
 

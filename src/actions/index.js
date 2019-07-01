@@ -1,5 +1,7 @@
 import streams from '../apis/streams';
-import { SIGN_IN, SIGN_OUT, CREATE_STREAM } from './types';
+import {
+  SIGN_IN, SIGN_OUT, CREATE_STREAM, FETCH_STREAMS, FETCH_STREAM, DELETE_STREAM, EDIT_STREAM
+} from './types';
 
 export const signIn = (userId) => {
   return {
@@ -14,8 +16,6 @@ export const signOut = () => {
   }
 }
 
-//Need to get a handle of response that comes back once a form is submitted
-//dispatch new action type with a payload of response.data
 export const createStream = (formValues) => {
   return async (dispatch) => {
     const response = await streams.post('/streams', formValues)
