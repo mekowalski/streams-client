@@ -42,3 +42,8 @@ export const fetchStream = (id) => {
     dispatch({ type: FETCH_STREAM, payload: response.data })
   }
 }
+
+//action creator for edit a record
+//a bit more challenging, any time a record is updated
+//need to provide both ID and the update to that record as arguments to action creator
+//combine idea of receiving ID from fetchStream WITH passing in formValues from createStream as arguments
