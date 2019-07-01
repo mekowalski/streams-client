@@ -1,4 +1,4 @@
-import streams from '../apis/streams'; //used to make request over to API
+import streams from '../apis/streams';
 import { SIGN_IN, SIGN_OUT } from './types';
 
 export const signIn = (userId) => {
@@ -14,12 +14,9 @@ export const signOut = () => {
   }
 }
 
-//called with a list of values entered into Form, as argument
-//define async action creator, making use of redux-thunk
-//return arrow () with dispatch as 1st argument with async
-//finally inside, make POST request to '/streams' endpoint @localhost:3001 and try putting in all formValues
+//Need to get a handle of response that comes back once a form is submitted
 export const createStream = (formValues) => {
   return async (dispatch) => {
-    streams.post('/streams', formValues)
+    const response = await streams.post('/streams', formValues)
   }
 }

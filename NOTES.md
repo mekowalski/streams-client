@@ -189,7 +189,7 @@ Path | Component
     - [x] Only show error messages to user after submitting invalid form
 
 
-- [] Submit Form: need to create stream and actually save it
+- [x] Submit Form: need to create stream and actually save it
   - Attempt to make `POST` request to API Server to create new stream record
   - [x] Install Axios AND `redux-thunk`
     - both used to write async action creator
@@ -205,4 +205,7 @@ Path | Component
       - how to wire up both `connect` and `reduxForm` at the same time
       - Modified syntax to stack functions via a `'wrapped'` variable
   - [x] `onSubmit()` calls action creator with formValues
-  - [] Need to actually wire up redux-thunk
+  - [x] Need to actually wire up redux-thunk
+
+- [x] Need to get a handle of response that comes back once a form is submitted
+- [] Dispatch an action with payload of that new;y-created, specific stream

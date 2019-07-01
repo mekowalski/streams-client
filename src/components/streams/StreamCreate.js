@@ -64,7 +64,6 @@ const validate = (formValues) => {
   return errors
 }
 
-//modified syntax to stack functions via a `'wrapped'` variable
 const formWrapped = reduxForm({
   form: 'streamCreate',
   validate
