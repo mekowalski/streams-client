@@ -13,3 +13,9 @@ export const signOut = () => {
     type: SIGN_OUT
   }
 }
+
+//called with a list of values entered into Form, as argument
+//define async action creator, making use of redux-thunk
+export const createStreams = (formValues) => {
+
+}

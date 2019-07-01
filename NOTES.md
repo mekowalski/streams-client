@@ -196,3 +196,4 @@ Path | Component
   - [x] Create API dir/file for `localhost:3001`
     - this will call on axios and separate concerns of the api, instead of using it all in action creator
     - create instance of axios then export it
+  - [] Create Action Creator: handle creation of stream record
