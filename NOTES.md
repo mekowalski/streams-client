@@ -193,6 +193,6 @@ Path | Component
   - Attempt to make `POST` request to API Server to create new stream record
   - [x] Install Axios AND `redux-thunk`
     - both used to write async action creator
-  - [] Create API dir/file for `localhost:3001`
+  - [x] Create API dir/file for `localhost:3001`
     - this will call on axios and separate concerns of the api, instead of using it all in action creator
     - create instance of axios then export it
