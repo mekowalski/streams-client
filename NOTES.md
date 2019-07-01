@@ -214,4 +214,10 @@ Path | Component
   - need a `type`, constant type values, this can be defined in `actions/types.js`
   - create new type and import it into `actions/index.js`
 
+- BULK ACTION CREATORS
+  1. The response is what the API Server returns when a request is made to it
+  2. If RESTful convention is truly being followed, the response is pretty predictable
+  3. Although there isn't a Component to show a list of records, edit a record, delete a record, then all Action Creators can be created altogether, when RESTful convention is followed
+  4. Try to create all Action Creators at one point in time(RIGHT NOW)
+
 - EVENTUALLY CREATE REDUCER TO PICK UP STREAM AND SAVE (or whatever i decide to do)
