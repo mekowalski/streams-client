@@ -219,7 +219,7 @@ Path | Component
   2. If RESTful convention is truly being followed, the response is pretty predictable
   3. Although there isn't a Component to show a list of records, edit a record, delete a record, then all Action Creators can be created altogether, when RESTful convention is followed
   4. Try to create all Action Creators at one point in time(RIGHT NOW)
-  - ~~creating stream~~/list of streams/getting 1 stream/editing a stream/deleting a stream
+  - ~~creating stream~~ / list of streams / getting 1 stream / editing a stream / deleting a stream
   - Eventually wire these up to their respective components when those are programmed
 
 
