@@ -197,10 +197,11 @@ Path | Component
     - this will call on axios and separate concerns of the api, instead of using it all in action creator
     - create instance of axios then export it
   - [x] Create Action Creator: handle creation of stream record
-  - [] Wire up Action Creator to StreamCreate component
+  - [x] Wire up Action Creator to StreamCreate component
     - attempt to call it
     - try to successfully create new stream on API
     - import connect() to wire up AC and component
     - Minor issue: `reduxForm()()` is wired up similarly as `connect()()` would be
       - how to wire up both `connect` and `reduxForm` at the same time
       - Modified syntax to stack functions via a `'wrapped'` variable
+  - [] `onSubmit()` calls action creator with formValues
