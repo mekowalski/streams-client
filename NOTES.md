@@ -203,3 +203,4 @@ Path | Component
     - import connect() to wire up AC and component
     - Minor issue: `reduxForm()()` is wired up similarly as `connect()()` would be
       - how to wire up both `connect` and `reduxForm` at the same time
+      - Modified syntax to stack functions via a `'wrapped'` variable

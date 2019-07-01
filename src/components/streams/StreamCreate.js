@@ -64,7 +64,10 @@ const validate = (formValues) => {
   return errors
 }
 
-export default reduxForm({
+//modified syntax to stack functions via a `'wrapped'` variable
+const fromWrapped = reduxForm({
   form: 'streamCreate',
   validate
 })(StreamCreate)
+
+export default connect()(formWrapped)
