@@ -24,7 +24,6 @@ export const createStream = (formValues) => {
   }
 }
 
-//trying action creator for most simple/common action type: getting a list of records
 export const fetchStreams = () => {
   return async (dispatch) => {
     const response = await streams.get('/streams')
@@ -33,8 +32,6 @@ export const fetchStreams = () => {
   }
 }
 
-//action creators for the single record
-//will want to pass in an id for the single stream to fetch
 export const fetchStream = (id) => {
   return async (dispatch) => {
     const response = await streams.get(`/streams/${id}`)
@@ -43,10 +40,6 @@ export const fetchStream = (id) => {
   }
 }
 
-//action creator for edit a record
-//a bit more challenging, any time a record is updated
-//need to provide both ID and the update to that record as arguments to action creator
-//combine idea of receiving ID from fetchStream WITH passing in formValues from createStream as arguments
 export const editStream = (id, formValues) => {
   return async (dispatch) => {
     const response = await streams.put(`/streams/${id}`, formValues)
@@ -55,9 +48,6 @@ export const editStream = (id, formValues) => {
   }
 }
 
-//action creator for deleting a record
-//get nothing back therefore payload property will be different
-//won't need a response, dispatch won't have a payload of response
 export const deleteStream = (id) => {
   return async (dispatch) => {
     await streams.delete(`/streams/${id}`)

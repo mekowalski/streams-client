@@ -221,7 +221,7 @@ Path | Component
   4. [x] Try to create all Action Creators at one point in time(RIGHT NOW)
   - ~~creating stream~~ / ~~list of streams~~ / ~~getting 1 stream~~ / ~~editing a stream~~ / ~~deleting a stream~~
   - [X] Import these action types in `actions/index.js`
-  - [] Create Action Creators for each one
+  - [x] Create Action Creators for each one
   - Eventually wire these up to their respective components when those are programmed
 
 
