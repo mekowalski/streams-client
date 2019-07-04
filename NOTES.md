@@ -226,3 +226,4 @@ Path | Component
 
 
 - EVENTUALLY CREATE REDUCER TO PICK UP STREAM AND SAVE (or whatever i decide to do)
+- [] Build Stream Reducer altogether
