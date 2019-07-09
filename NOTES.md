@@ -227,3 +227,5 @@ Path | Component
 
 - EVENTUALLY CREATE REDUCER TO PICK UP STREAM AND SAVE (or whatever i decide to do)
 - [] Build Stream Reducer altogether
+  - Handle: fetching, creating and updating
+  - [] `streamReducer.js`: import a few different action types
