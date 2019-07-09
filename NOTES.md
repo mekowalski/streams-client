@@ -230,3 +230,7 @@ Path | Component
   - Handle: fetching, creating and updating
   - [] `streamReducer.js`: import a few different action types
     - Set up many `case` statements to handle each type of action
+    - `FETCH_STREAM, CREATE_STREAM & EDIT_STREAM` are all identical due to a single record from the API being returned
+    - The record is taken and added to State object, which makes these 3 all identical
+
+    - For the cases of `FETCH_STREAMS & DELETE_STREAM` there is a bit of a different syntax/approach
