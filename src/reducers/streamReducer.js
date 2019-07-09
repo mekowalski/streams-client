@@ -14,9 +14,6 @@ export default (state = {}, action) => {
       return { ...state, [action.payload.id]: action.payload }
     case DELETE_STREAM:
       return _.omit(state, action.payload)
-      //return omit with entire State object, and what key that needs to be deleted from the State object
-      //in this case it's action.payload
-      //don't need .id because when the action dispatches a type of DELETE_STREAM, the payload is the ID
 
     default:
       return state
