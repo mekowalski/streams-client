@@ -3,13 +3,16 @@ import {
 } from '../actions/types';
 
 
-export defautl (state = {}, action) => {
+export default (state = {}, action) => {
   switch (action.type) {
     case FETCH_STREAM:
       return { ...state, [action.payload.id]: action.payload }
-      //any time an action of FETCH_STREAM is used, take all the properties(KV pairs) in the State object
-      //add it to the new State object, dynamically add a new KV pair
-      //key of stream's ID and value of the stream itself
+    case CREATE_STREAM:
+      return { ...state, [action.payload.id]: action.payload }
+      //return an empty State object, again take the ID of the stream that was created
+      //and assign it a value of the newly created stream
+      //they end up being identical because the payload is taken from the action
+      //and added as a new KV pair on the State object
 
     default:
       return state
