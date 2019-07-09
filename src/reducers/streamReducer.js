@@ -9,10 +9,10 @@ export default (state = {}, action) => {
       return { ...state, [action.payload.id]: action.payload }
     case CREATE_STREAM:
       return { ...state, [action.payload.id]: action.payload }
-      //return an empty State object, again take the ID of the stream that was created
-      //and assign it a value of the newly created stream
-      //they end up being identical because the payload is taken from the action
-      //and added as a new KV pair on the State object
+    case EDIT_STREAM:
+      return { ...state, [action.payload.id]: action.payload }
+      //in all of these 3 cases, a single record from the API is being returned
+      //take that record and add it to State object, which makes these 3 all identical
 
     default:
       return state
