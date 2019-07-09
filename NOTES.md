@@ -234,3 +234,6 @@ Path | Component
     - The record is taken and added to State object, which makes these 3 all identical
 
     - For the cases of `FETCH_STREAMS & DELETE_STREAM` there is a bit of a different syntax/approach
+    - [] `DELETE_STREAM`
+      1. Install Lodash
+      2. Wire `_omit` statement to Reducer
