@@ -229,3 +229,4 @@ Path | Component
 - [] Build Stream Reducer altogether
   - Handle: fetching, creating and updating
   - [] `streamReducer.js`: import a few different action types
+    - Set up many `case` statements to handle each type of action
