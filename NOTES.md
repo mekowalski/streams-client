@@ -237,7 +237,7 @@ Path | Component
     - [x] `DELETE_STREAM`
       1. Install Lodash
       2. Wire `_omit` statement to Reducer
-    - [] `CREATE_STREAM`
+    - [x] `CREATE_STREAM`
       - Take list/array of records and merge it all into State object
       - Take the array of streams received from API and turn it into an object with `mapKeys()`
       - `mapKeys()` via Lodash

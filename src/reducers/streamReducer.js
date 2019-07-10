@@ -12,6 +12,9 @@ export default (state = {}, action) => {
       //(..._.mapKeys(action.payload, 'id'))
       //action.payload is the list of streams from API and create an object using mapKeys()
       //'id' will be the keys for each object
+
+      //mapKeys() returns a big object, take all the KV pais from object
+      //and add it into the new created object (..._.mapKeys())
     case FETCH_STREAM:
       return { ...state, [action.payload.id]: action.payload }
     case CREATE_STREAM:
