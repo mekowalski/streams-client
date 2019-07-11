@@ -241,3 +241,4 @@ Path | Component
       - Take list/array of records and merge it all into State object
       - Take the array of streams received from API and turn it into an object with `mapKeys()`
       - `mapKeys()` via Lodash
+    - [] Actually FETCH the list of STREAMS when StreamList component is rendered
