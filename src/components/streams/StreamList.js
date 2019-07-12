@@ -13,7 +13,7 @@ class StreamList extends React.Component {
     return this.props.streams.map(stream => {
       return (
         <div className='item' key={stream.id}>
-          <i className='large middle aligned icon camera' /> //camera  icon, useless but something
+          <i className='large middle aligned icon play circle' />
           <div className='content'>
             {stream.title}
             <div className='description'>
@@ -25,16 +25,18 @@ class StreamList extends React.Component {
     })
   }
 
-  //component will now have a prop called this.props.streams which will be an array of all streams
-  //test with console.log() which does return the array of stream objects
   render() {
     return (
       <div>
-        this is the stream list
+        <h2>Streams</h2>
+        <div className='ui celled list'>
+          {this.renderList()}
+        </div>
       </div>
     )
   }
 }
+//YES THIS IS WORKING WELL!!!
 
 
 
