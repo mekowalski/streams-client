@@ -252,4 +252,9 @@ Path | Component
 ### Associate Streams with Users
 - Eventually for next cases, want to make sure:
 1. If a user is signed in then they can see a create/edit/delete button
+  - EDIT/DELETE buttons should ONLY be shown for the user who created that stream
+  - There may be other streams shown but buttons altering buttons won't be available if you didn't create that stream
+  - [] Attach a user ID to streams, once stream is created
+    - get userId inside action creator `createStream`
+
 2. Header of Title should be clickable to render the stream detail page
