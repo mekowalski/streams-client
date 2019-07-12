@@ -245,4 +245,5 @@ Path | Component
       - Wire up Action Creator call to StreamList component
       - Anytime StreamList component is rendered on screen, attempt to fetch list of streams
       - With Redux DevTools via State tab, able to see the current streams i've created
-    - [] Create render list method to display streams
+    - [] Create render list method to display streams `renderList()`
+      - this will map over the streams and return some JSX for each stream
