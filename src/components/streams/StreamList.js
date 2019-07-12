@@ -2,9 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchStreams } from '../../actions';
 
-//replace this with class-based component
-//want to call action creator inside componentDidMount()
-//attempt to fetch list of streams only once
 class StreamList extends React.Component {
   componentDidMount() {
     this.props.fetchStreams()
@@ -18,7 +15,11 @@ class StreamList extends React.Component {
     )
   }
 }
-//at this point, just looking to call action creator
-//then user redux devtools to see actual list of streams appear inside actual Redux State
+
+//1. define mapStateToProps(): call with state
+//2. map over streams object into an array with Object.values()
+const mapStateToProps = (state) => {
+  return { streams: Object.values(state.streams) }
+}
 
 export default connect(null, { fetchStreams })(StreamList)
