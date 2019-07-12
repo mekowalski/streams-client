@@ -8,7 +8,7 @@ class StreamList extends React.Component {
   }
 
   //3. define renderList()
-  //4. mapp over streams and return some JSX for each stream
+  //4. map over streams and return some JSX for each stream
   renderList() {
     return this.props.streams.map(stream => {
       return (
@@ -25,6 +25,7 @@ class StreamList extends React.Component {
     })
   }
 
+//5. call renderList() inside render()
   render() {
     return (
       <div>

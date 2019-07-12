@@ -226,9 +226,9 @@ Path | Component
 
 
 - EVENTUALLY CREATE REDUCER TO PICK UP STREAM AND SAVE (or whatever i decide to do)
-- [] Build Stream Reducer altogether
+- [x] Build Stream Reducer altogether
   - Handle: fetching, creating and updating
-  - [] `streamReducer.js`: import a few different action types
+  - [x] `streamReducer.js`: import a few different action types
     - Set up many `case` statements to handle each type of action
     - `FETCH_STREAM, CREATE_STREAM & EDIT_STREAM` are all identical due to a single record from the API being returned
     - The record is taken and added to State object, which makes these 3 all identical
@@ -247,3 +247,9 @@ Path | Component
       - With Redux DevTools via State tab, able to see the current streams i've created
     - [x] Create render list method to display streams `renderList()`
       - this will map over the streams and return some JSX for each stream
+
+
+### Associate Streams with Users
+- Eventually for next cases, want to make sure:
+1. If a user is signed in then they can see a create/edit/delete button
+2. Header of Title should be clickable to render the stream detail page
