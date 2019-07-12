@@ -7,7 +7,10 @@ class StreamList extends React.Component {
     this.props.fetchStreams()
   }
 
+  //component will now have a prop called this.props.streams which will be an array of all streams
+  //test with console.log() which does return the array of stream objects
   render() {
+    console.log(this.props.streams)
     return (
       <div>
         this is the stream list
@@ -22,4 +25,4 @@ const mapStateToProps = (state) => {
   return { streams: Object.values(state.streams) }
 }
 
-export default connect(null, { fetchStreams })(StreamList)
+export default connect(mapStateToProps, { fetchStreams })(StreamList)
